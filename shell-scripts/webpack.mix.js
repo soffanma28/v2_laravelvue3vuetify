@@ -1,6 +1,6 @@
 const mix = require('laravel-mix')
 const path = require('path')
-require('vuetifyjs-mix-extension')
+import 'vuetifyjs-mix-extension'
 
 /*
  |--------------------------------------------------------------------------
@@ -31,7 +31,7 @@ mix
   .copyDirectory('resources/js/src/assets/images', 'public/images')
 
 // ------------------------------------------------
-// If you are deploying on subdomain/subfolder. Uncomment below code before running 'yarn prod' or 'npm run production' command.
+// If you are deploying on subdomain/subfolder. Uncomment below code before running 'yarn prod' or 'npm run build' command.
 // Please Change below 'publicPath' and 'setResourceRoot' options as per your sub-directory path. We have kept our current live demo options which is deployed in sub-folder.
 // ------------------------------------------------
 
@@ -47,7 +47,7 @@ if (mix.inProduction()) {
 }
 
 // ------------------------------------------------
-// If you are deploying on subdomain/subfolder then comment out below code before running 'yarn prod' or 'npm run production' command.
+// If you are deploying on subdomain/subfolder then comment out below code before running 'yarn prod' or 'npm run build' command.
 // ------------------------------------------------
 
 // mix.webpackConfig({
