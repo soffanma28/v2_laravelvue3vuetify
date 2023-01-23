@@ -1,6 +1,6 @@
 const mix = require('laravel-mix')
 const path = require('path')
-require('vuetifyjs-mix-extension')
+import 'vuetifyjs-mix-extension'
 
 /*
  |--------------------------------------------------------------------------

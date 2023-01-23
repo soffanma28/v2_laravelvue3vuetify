@@ -1,4 +1,4 @@
-require('@resources/sass/preset/overrides.scss')
+import '@resources/sass/preset/overrides.scss'
 
 export default {
   theme: {
